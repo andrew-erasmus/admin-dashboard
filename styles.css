@@ -1,0 +1,37 @@
+* {
+  border: solid black 1px;
+}
+
+html {
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+#grid-container{
+    height: inherit;
+    width: inherit;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 20% 80%;
+}
+
+#sidebar {
+  background-color: cornflowerblue;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#header {
+  background-color: white;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#dashboard {
+  background-color: lightgray;
+  grid-area: 2 / 2 / 3 / 3;
+}
