@@ -12,28 +12,41 @@ body {
   margin: 0;
 }
 
-#grid-container{
-    height: inherit;
-    width: inherit;
-    display: grid;
-    grid-template-rows: 20% 80%;
-    grid-template-columns: 20% 80%;
+#grid-container {
+  height: inherit;
+  width: inherit;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 20% 80%;
 }
 
 #sidebar {
-  background-color:cadetblue;
+  background-color: cadetblue;
   grid-area: 1 / 1 / 3 / 2;
   display: grid;
   height: inherit;
-  grid-template-rows: 1fr 3fr 2fr 4fr ;
+  grid-template-rows: 1fr 3fr 2fr 4fr;
   row-gap: 20px;
   color: white;
+  min-width: 90px
+}
+
+@media screen and (max-width: 1100px) {
+
+  #sidebar>div>div>p {
+    display: none;
+  }
+
+  #sidebar-heading > div > h1 { 
+    display: none;
+  }
+
 }
 
 #header {
   background-color: white;
   grid-area: 1 / 2 / 2 / 3;
-  box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
 #dashboard {
@@ -41,16 +54,19 @@ body {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-#sidebar-heading, #control-options, #admin, #side-placeholder{
-    /* border: solid black 1px; */
-    padding-left: 35px;
-    align-content: center;
-    justify-content: center;
+#sidebar-heading,
+#control-options,
+#admin,
+#side-placeholder {
+  /* border: solid black 1px; */
+  padding-left: 30px;
+  align-content: center;
+  justify-content: center;
 }
 
-#sidebar > div > div > p {
-    font-size: 1.25rem;
-    margin: 10px;
+#sidebar>div>div>p {
+  font-size: 1.25rem;
+  margin: 10px;
 }
 
 /* img {
@@ -59,25 +75,26 @@ body {
     color: white;
 } */
 
-#sidebar-heading > div > svg {
-    fill: white;
-    height: 30px;
-    width: auto;
-    margin-top: 25px;
-    margin-right: 10px;
+#sidebar-heading>div>svg {
+  fill: white;
+  height: 30px;
+  width: auto;
+  margin-top: 25px;
+  margin-right: 10px;
 }
 
 svg {
-    fill: white;
-    height: 30px;
-    width: auto;
-    margin-top: 7px;
+  fill: white;
+  height: 30px;
+  width: auto;
+  margin-top: 7px;
 }
 
-#sidebar-heading > div{
-    display: flex;
+#sidebar-heading>div {
+  display: flex;
 }
 
-#control-options > div, #admin > div {
-    display: flex;
+#control-options>div,
+#admin>div {
+  display: flex;
 }
