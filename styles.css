@@ -69,12 +69,6 @@ body {
   margin: 10px;
 }
 
-/* img {
-    height: 40px;
-    width: auto;
-    color: white;
-} */
-
 #sidebar-heading>div>svg {
   fill: white;
   height: 30px;
@@ -97,4 +91,72 @@ svg {
 #control-options>div,
 #admin>div {
   display: flex;
+}
+
+#header{
+  display: grid;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+}
+
+#top-row{
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 10fr 1fr 1fr 2fr;
+}
+
+#bottom-row{
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 2fr 7fr 2fr 2fr 2fr;
+}
+
+#header > div {
+  border: solid black 1px;
+}
+
+#header > div > div {
+  border: solid red 1px;
+}
+
+#dashboard {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 75% 25%;
+  column-gap: 15px;
+}
+
+#left-grid-container, #right-grid-container {
+  display: grid;
+}
+
+#projects, #announcements, #trending {
+  padding-top: 10px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.card, .section {
+  border-radius: 5px;
+  border: solid yellowgreen 3px;
+  flex: 1;
+}
+
+#project-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  flex: 1;
 }
