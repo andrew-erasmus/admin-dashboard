@@ -27,6 +27,7 @@ body {
   height: inherit;
   grid-template-rows: 1fr 3fr 2fr 4fr ;
   row-gap: 20px;
+  color: white;
 }
 
 #header {
@@ -42,12 +43,41 @@ body {
 
 #sidebar-heading, #control-options, #admin, #side-placeholder{
     /* border: solid black 1px; */
-    padding-left: 20px;
+    padding-left: 35px;
     align-content: center;
     justify-content: center;
 }
 
-#sidebar-heading {
-
+#sidebar > div > div > p {
+    font-size: 1.25rem;
+    margin: 10px;
 }
 
+/* img {
+    height: 40px;
+    width: auto;
+    color: white;
+} */
+
+#sidebar-heading > div > svg {
+    fill: white;
+    height: 30px;
+    width: auto;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+svg {
+    fill: white;
+    height: 30px;
+    width: auto;
+    margin-top: 7px;
+}
+
+#sidebar-heading > div{
+    display: flex;
+}
+
+#control-options > div, #admin > div {
+    display: flex;
+}
