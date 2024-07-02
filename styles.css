@@ -115,13 +115,13 @@ svg {
   grid-template-columns: 2fr 7fr 2fr 2fr 2fr;
 }
 
-#header > div {
+/* #header > div {
   border: solid black 1px;
-}
+} */
 
-#header > div > div {
+/* #header > div > div {
   border: solid red 1px;
-}
+} */
 
 #dashboard {
   display: grid;
@@ -142,8 +142,10 @@ svg {
   gap: 5px;
 }
 
-h3 {
+p, h2, h3 {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card, .section {
@@ -154,9 +156,58 @@ h3 {
 
 #project-cards {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 10px;
   column-gap: 10px;
   flex: 1;
+}
+
+#top-row > div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#bottom-row > div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 30px;
+  width: auto;
+}
+
+#top-row > div#search-container {
+  display: inline-block;
+  padding: 20px;
+}
+
+#search-bar {
+  background-color: lightgray;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+}
+
+#large-profile {
+  width: 60px;
+  height: auto;
+}
+
+#bottom-row > div#information{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#new-button, #upload-button, #share-button{
+  background-color: cadetblue;
+  border-radius: 100px;
+  height: 30px;
+  width: 125px;
+  align-self: center;
+  justify-self: center;
 }
