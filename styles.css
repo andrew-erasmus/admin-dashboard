@@ -23,7 +23,7 @@ body {
 
 #sidebar {
   background-color: cornflowerblue;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 3 / 2;
 }
 
 #header {
