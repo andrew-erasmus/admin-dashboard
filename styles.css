@@ -114,14 +114,6 @@ svg {
   grid-template-columns: 2fr 7fr 2fr 2fr 2fr;
 }
 
-/* #header > div {
-  border: solid black 1px;
-} */
-
-/* #header > div > div {
-  border: solid red 1px;
-} */
-
 #dashboard {
   display: grid;
   padding: 20px;
@@ -157,7 +149,6 @@ h3 {
   border-radius: 10px;
   background-color: white;
   box-shadow: 0px 0px 22px -7px rgba(0, 0, 0, 0.15);
-  /* display: flex; */
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -176,9 +167,7 @@ h3 {
   flex-grow: 1;
   height: 150px;
   overflow-y: auto;
-  /* Allows vertical scrolling */
   overflow-x: hidden;
-  /* Hides horizontal scrolling */
 }
 
 .card-content>p>strong {
@@ -312,4 +301,32 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* Add styling for hover effects */
+
+.card:hover,
+#announcement-info:hover,
+#trending-info:hover,
+#new-button:hover,
+#upload-button:hover,
+#share-button:hover,
+#search-bar:hover,
+#control-options>div:hover,
+#admin>div:hover,
+#sidebar-heading>div:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover,
+#announcement-info:hover,
+#trending-info:hover,
+#new-button:hover,
+#upload-button:hover,
+#share-button:hover,
+#search-bar:hover {
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
 }
