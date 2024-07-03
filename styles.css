@@ -184,6 +184,47 @@ h3 {
   flex: 1;
 }
 
+#announcement-info, #trending-info {
+  background-color: white;
+  flex: 1;
+}
+
+#announcement-info {
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: 1fr;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.announcement-item {
+  height: 100%;
+  border-top: solid  rgb(204, 204, 204) 1px;
+  border-bottom: solid rgb(204, 204, 204) 1px;
+}
+
+.announcement-item:first-child {
+  border: none;
+}
+
+.announcement-item:last-child {
+  border: none;
+}
+
+#trending-info {
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: 1fr;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+} 
+
+.trending-item {
+  height: 100%;
+}
+
 #top-row > div {
   display: grid;
   align-items: center;
